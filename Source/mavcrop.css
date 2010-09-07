@@ -1,0 +1,51 @@
+.clipping-element {
+	width: 1024px;
+	height: 198px;
+	margin: 100px auto 20px;
+	background: transparent none no-repeat;
+}
+
+.clipping-element2 {
+	display: block;
+	width: 1024px;
+	height: 198px;
+	margin: 100px auto 20px;
+}		
+
+.clip-shade {
+	z-index: 4;
+	position: relative;
+	background: rgba(0,0,0,0.65);			
+}
+
+.clip-box {
+	z-index: 5;
+	position: absolute;
+	background: transparent none no-repeat 0 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.clipper-box {
+	position: absolute;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	z-index: 6;
+	border: 1px dashed rgba(0,174,239,0.7);
+	opacity: 0.7;
+}
+	.clipper-box:hover { opacity: 1.0; }
+
+	.clipper-wrap { position: relative; z-index: 7; cursor: move; }
+
+	.cb-handle {
+		position: absolute;
+		width: 8px;
+		height: 8px;
+		background: rgba(0,174,239,1);
+	}
+
+	.cb-tl { top: -6px; left: -6px; cursor: nw-resize; }
+	.cb-tr { top: -6px; right: -6px; cursor: sw-resize; }
+	.cb-bl { bottom: -6px; left: -6px; cursor: ne-resize; }
+	.cb-br { bottom: -6px; right: -6px; cursor: se-resize; }
