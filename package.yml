@@ -1,0 +1,8 @@
+name: MavCrop
+author: dustin
+category: Interface
+tags: [crop, image, UI, GUI]
+demo: http://maveno.us/library/public/mavcrop/
+docs: http://maveno.us/library/public/mavcrop/
+mooshell: http://maveno.us/library/public/mavcrop/mc_demo.html
+current: 0.5.1
