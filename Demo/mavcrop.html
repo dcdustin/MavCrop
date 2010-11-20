@@ -1,0 +1,45 @@
+<!doctype html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>MavCrop Demo</title>
+	<link rel="stylesheet" type="text/css" href="../Source/mavcrop.css">
+	<script type="text/javascript" src="mootools-core-1.3-yui.js"></script>
+	<script type="text/javascript" src="mootools-more-1.3-yui.js"></script>
+	<script type="text/javascript" src="../Source/MavCrop.js"></script>
+</head>
+<body>
+
+	<!-- Image credit: Shia-Yen @ http://picasaweb.google.com/lh/photo/R1z9LqTBNM8jXH0hV2ESsQ -->
+	<img src="outside_hotel.jpg" id="mavcrop_image" style="width:800px;height:250px;margin:15px auto;display:block;position:relative">
+
+	<div style="width:800px;height:20px;line-height:20px;margin:0 auto">
+		<a href="javascript:void(0)" onclick="mcrop.show()">Show Cropper</a> |
+		<a href="javascript:void(0)" onclick="mcrop.hide()">Hide Cropper</a> |
+		<a href="javascript:void(0)" onclick="display_cropping()">Show Cropped Image</a>
+	</div>
+	
+	<div id="cropped_images" style="width:800px;margin:10px auto"></div>
+
+<script type="text/javascript">
+var mcrop;
+window.addEvent('domready', function() {
+	mcrop = new MavCrop('mavcrop_image', {
+		min: { 'x': 100, 'y': 50 },
+		sendImagePath: true,
+		hideAfterCrop: false
+	});
+});
+
+function display_cropping() {
+	var json_data = mcrop.cropImage();
+
+	new Element('img', {
+		'src': 'mav_crop.php?json=' + encodeURIComponent(JSON.stringify(json_data)),
+		'style': 'display:block;margin:10px auto'
+	}).inject($('cropped_images'), 'top');
+}
+</script>
+
+</body>
+</html>
