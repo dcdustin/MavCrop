@@ -1,8 +1,14 @@
 name: MavCrop
 author: dustin
+authors:
+  - "[Dustin Hansen](http://maveno.us)"
 category: Interface
+description: "Image cropping interface for mootools"
 tags: [crop, image, UI, GUI]
 demo: http://maveno.us/library/public/mavcrop/
 docs: http://maveno.us/library/public/mavcrop/
-mooshell: http://maveno.us/library/public/mavcrop/
 current: 0.6
+license: MIT-style
+
+sources:
+    - "Source/MavCrop.js"

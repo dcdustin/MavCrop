@@ -1,22 +1,17 @@
 /*
 ---
-description: MavCrop
 
+script MavCrop.js
+version: 0.7
+description: MavCrop class. Provides method for interactively cropping images
+license: MIT-style
 authors:
-  - Dustin Hansen(http://maveno.us/)
+  - Dustin Hansen
 
-license:
-  - MIT-style license
+requires: [Core/*, More/Class.Binds, More/Drag.Move]
 
-requires:
-  core/1.2.4: '*'
-  more/1.2.5.1: ['Class.Binds', 'Drag.Move']
+provides: [MavCrop]
 
-provides:
-  - MavCrop
-
-version:
-  0.6
 ...
 */
 var MavCrop = new Class({
