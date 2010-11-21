@@ -7,10 +7,10 @@ MavCrop is a simple, light-weight mootools library that provides the ability to 
 
 How to use
 ----------
-	#HTML
-	<img src="image.jpg" id="image_name">
+    #HTML
+        <img src="image.jpg" id="image_name">
 
-	#JS
-	var mcrop = new MavCrop('image_name', {
-		// options
-	});
+    #JS
+        var mcrop = new MavCrop('image_name', {
+            // options
+        });
