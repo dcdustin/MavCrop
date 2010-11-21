@@ -2,7 +2,7 @@
 ---
 
 script MavCrop.js
-version: 0.7
+version: 0.7.1.2
 description: MavCrop class. Provides method for interactively cropping images
 license: MIT-style
 authors:

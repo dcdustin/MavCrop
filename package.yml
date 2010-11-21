@@ -7,7 +7,7 @@ description: "Image cropping interface for mootools"
 tags: [crop, image, UI, GUI]
 demo: http://maveno.us/library/public/mavcrop/
 docs: http://maveno.us/library/public/mavcrop/
-current: 0.6
+current: 0.7.1.2
 license: MIT-style
 
 sources:
