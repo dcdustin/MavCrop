@@ -1,9 +1,10 @@
 MavCrop
 ==========
-MavCrop is a simple, light-weight mootools library that provides the ability to crop an image. See demo included within the /demo directory.
 
-![MavCrop](https://github.com/dcdustin/MavCrop/raw/master/logo.png)
+MavCrop is a simple, light-weight mootools library that provides the ability to crop an image. 
+See demo included within the /demo directory.
 
+![Screenshot](https://github.com/dcdustin/MavCrop/raw/master/logo.png)
 
 How to use
 ----------

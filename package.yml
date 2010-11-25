@@ -2,6 +2,6 @@ name: MavCrop
 author: dustin
 category: Interface
 tags: [crop, image, UI, GUI]
-docs: http://maveno.us/library/public/mavcrop/
-demo: http://maveno.us/library/public/mavcrop/
+docs: http://maveno.us/library/public/mavcrop
+demo: http://maveno.us/library/public/mavcrop
 current: 0.8
