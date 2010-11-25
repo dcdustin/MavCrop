@@ -1,12 +1,12 @@
 /*
 ---
-
-script MavCrop.js
-version: 0.7.1.2
 description: MavCrop class. Provides method for interactively cropping images
+
 license: MIT-style
+
 authors:
-  - Dustin Hansen
+- dustin
+- Dustin Hansen
 
 requires: [Core/*, More/Class.Binds, More/Drag.Move]
 
@@ -14,6 +14,7 @@ provides: [MavCrop]
 
 ...
 */
+
 var MavCrop = new Class({
 
 	'Implements': [Options, Events],
@@ -24,11 +25,11 @@ var MavCrop = new Class({
 		'autoDraw': true,								// generates cropping area on instantiation
 		'coords': null,									// {'x':Integer, 'y': Integer, 'width': Integer, 'height': Integer},
 //		'keepRatio': false,								// keeps the original ratio of the cropping area
-//		'constrain': false,	
-//		'shiftConstrains': false,
+//		'constrain': false,								// not yet implemented
+//		'shiftConstrains': false,						// not yet implemented
 		'hideAfterCrop': true,							// hides cropping area after cropping is accepted
-		'min': { 'x': 20, 'y': 20 },			// minimum width/height for cropping area
-		'max': { 'x': null, 'y': null },		// maximum width/height for cropping area
+		'min': { 'x': 20, 'y': 20 },					// minimum width/height for cropping area
+		'max': { 'x': null, 'y': null },				// maximum width/height for cropping area
 		'sendImagePath': false							// send image path as variable in cropping data
 /*
 	,onBeforeDrag: $empty()
