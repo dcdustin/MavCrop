@@ -30,7 +30,7 @@
 	imagecopy($cropped, $orig, 0, 0, $json['x'], $json['y'], $json['w'], $json['h']);
 
 	// We're not going to save this to disk, no, we're just gonna spit it out to the browser.	
-	header('Content-type: image/png');
+	header('Content-type: image/jpeg');
 	imagejpeg($cropped);
 	imagedestroy($cropped);	
 ?>
