@@ -22,15 +22,15 @@ var MavCrop = new Class({
 	'Binds': ['sizing','stop'],
 	
 	'options': {
-		'autoDraw': true,								// generates cropping area on instantiation
-		'coords': null,									// {'x':Integer, 'y': Integer, 'width': Integer, 'height': Integer},
-//		'keepRatio': false,								// keeps the original ratio of the cropping area
-//		'constrain': false,								// not yet implemented
-//		'shiftConstrains': false,						// not yet implemented
-		'hideAfterCrop': true,							// hides cropping area after cropping is accepted
-		'min': { 'x': 20, 'y': 20 },					// minimum width/height for cropping area
-		'max': { 'x': null, 'y': null },				// maximum width/height for cropping area
-		'sendImagePath': false							// send image path as variable in cropping data
+		'autoDraw': true,			// generates cropping area on instantiation
+		'coords': null,				// {'x':Integer, 'y': Integer, 'width': Integer, 'height': Integer},
+//		'keepRatio': false,			// keeps the original ratio of the cropping area
+//		'constrain': false,			// not yet implemented
+//		'shiftConstrains': false,		// not yet implemented
+		'hideAfterCrop': true,			// hides cropping area after cropping is accepted
+		'min': { 'x': 20, 'y': 20 },		// minimum width/height for cropping area
+		'max': { 'x': null, 'y': null },	// maximum width/height for cropping area
+		'sendImagePath': false			// send image path as variable in cropping data
 /*
 	,onBeforeDrag: $empty()
 	,onDrag: $empty()
